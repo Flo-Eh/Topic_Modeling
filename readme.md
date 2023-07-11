@@ -21,7 +21,7 @@ docker-compose up
 Start Streamlit:
 
 ```
-streamlit run Topic_Modeling.py
+streamlit run streamlit/Topic_Modeling.py
 ```
 ### Using the API
 
