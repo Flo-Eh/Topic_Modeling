@@ -1,8 +1,17 @@
 # MLOps - Topic Modeling
 
 ## About the project 
-The project MLOps - Topic Modeling aims at deploying a topic modeling workflow with an MLOps approach.<br>
-As an underlying workflow, we selected the project <i>Topic Modelling with Gensim. A workflow for the Humanities</i> available under the following repo: https://github.com/DHARPA-Project/TopicModelling- (1). The reference materials that we used were forked into the "reference" directory of the current project.
+Topic Modeling:
+
+As digitally available textual repositories are becoming larger and larger, traditional close reading methods are no longer sufficient to analyse mass of digital data. Topic Modeling is a computational, statistical method to discover patterns and topics in large collections of text.
+
+## Data:
+
+This open access collection (https://zenodo.org/record/4596345#.Yk2flG5Bz0o ) includes the digitized front pages of 10 Italian language newspapers published in California, Connecticut, Pennsylvania, Vermont, and West Virginia. It totals 8,653 issues and contains 21,454,455 words. The titles are: L’Italia, Cronaca sovversiva, La libera parola, The patriot, La ragione, La rassegna, La sentinella del West Virginia, L’Indipendente, La Sentinella, and and La Tribuna del Connecticut. The material was collected from Chronicling America, an Internet-based, searchable database of U.S. newspapers published in the United States from 1789 to 1963 made available by the Library of Congress. The corpus features mainstream (prominenti), anarchic (sovversivi), and independent newspapers thus providing a very nuanced picture of the Italian immigrant community in the United States at the turn of the twentieth century.
+
+## API goal:
+
+Our API aims at enabling users to update a pre-trained model that has been trained with the collection described above, and to monitor the evolution of metrics over time. We have chosen two metrics to do so: coherence and perplexity. The coherence score measures the statistical accuracy of the model, whereas perplexity helps determining whether the model is too specific or too generic for a corpus of text. If thresholds are reached, the API alerts users and offers a route to retrain the model in order to assess again the number of topics to be used, as a preparation step before creating a new model.
 
 ## Deploy project 
 ```
