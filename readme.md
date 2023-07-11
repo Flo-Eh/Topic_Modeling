@@ -8,6 +8,10 @@ As an underlying workflow, we selected the project <i>Topic Modelling with Gensi
 """
 docker-compose up
 """
+Start Streamlit:
+
+streamlit run Topic_Modeling.py
+
 ## Metrics and performance requirements
 
 
